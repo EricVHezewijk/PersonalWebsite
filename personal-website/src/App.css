@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sriracha&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text-container {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    max-width: 40vw;
+
+}
+
+.intro-text-container h1 {
+    padding: 0.5rem 0 0.5rem 0;
+    font-weight: 800;
+}
+
+.software-engineer-txt {
+    color: #b69b00;
+    padding-bottom: 0.5rem;
+}
+
+.resume-btn {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background: radial-gradient(circle at 30% 10%, #fff4bb, #b69b00);
+    border: none;
+    border-radius: 2rem;
+    margin: 1rem 0rem 0rem 0rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.7rem black;
+}
+
+.resume-btn:hover {
+    background: none;
+    background-color: black;
+    color: #b69b00;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    font-size: large;
+}
+
+.project-container {
+    margin-top: 10rem;
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;    
+}
