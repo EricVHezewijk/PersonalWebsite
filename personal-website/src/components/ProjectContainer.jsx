@@ -3,11 +3,15 @@ import Project from './Project'
 
 function ProjectContainer() {
   return (
-    <div className='project-container'>
-      <Project />
-      <Project />
-      <Project />
-    </div>
+    <>
+      <h3 className='project-header'>Projects</h3>
+      <div className='project-container'>
+        <Project />
+        <Project />
+        <Project />
+      </div>
+    </>
+    
   )
 }
 

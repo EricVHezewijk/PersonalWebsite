@@ -12,11 +12,16 @@ html {
     flex-direction: column;
 }
 
-.intro-text-container {
-    margin-left: 4rem;
-    margin-top: 4rem;
-    max-width: 40vw;
+.intro-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid red;
+}
 
+.intro-text-container {
+    max-width: 40vw;
+    max-height: 40vh;
 }
 
 .intro-text-container h1 {
@@ -48,16 +53,45 @@ html {
     font-size: large;
 }
 
+.pfp-container {
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 40vw;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.pfp-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
 .project-container {
-    margin-top: 10rem;
     border: 2px solid red;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
 }
 
 .project {
     border: 2px solid black;
     margin: 1rem;
-    padding: 1rem;    
+    aspect-ratio: 1 / 1;
+}
+
+.project ul{
+    padding-left: 1.5rem;
+}
+
+.project-header {
+    margin-top: 20%;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
 }
