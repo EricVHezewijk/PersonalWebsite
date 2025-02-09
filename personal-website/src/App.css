@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sriracha&display=swap');
 
+:root {
+    --primary-color: #f1951a;
+}
+
 * {
     font-family: "Nunito", sans-serif;
     margin: 0;
@@ -14,49 +18,55 @@ html {
 
 .intro-container {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     border: 2px solid red;
+    margin: 3rem 5rem 0 5rem;
 }
 
 .intro-text-container {
     max-width: 40vw;
     max-height: 40vh;
+    border: 2px solid red;
 }
 
 .intro-text-container h1 {
     padding: 0.5rem 0 0.5rem 0;
     font-weight: 800;
+    font-size: 4rem;
+}
+
+.intro-text-container h3{
+    font-size: 1.5rem;
+}
+
+.intro-text-container h4{
+    font-size: 2rem;
 }
 
 .software-engineer-txt {
-    color: #b69b00;
-    padding-bottom: 0.5rem;
+    color: var(--primary-color);
 }
 
 .resume-btn {
     padding: 0.5rem 2rem 0.5rem 2rem;
-    background: radial-gradient(circle at 30% 10%, #fff4bb, #b69b00);
     border: none;
     border-radius: 2rem;
     margin: 1rem 0rem 0rem 0rem;
     cursor: pointer;
     box-shadow: 0 0 0.7rem black;
+    background-color: var(--primary-color);
 }
 
 .resume-btn:hover {
-    background: none;
-    background-color: black;
-    color: #b69b00;
-    transform: scale(1.1);
+    transform: scale(1.05), translate(-2.5%);
     transition: 0.2s ease-in-out;
     font-size: large;
 }
 
 .pfp-container {
+    margin: 1rem 1rem 0 auto;
     border: 2px solid red;
     border-radius: 50%;
-    height: 40vw;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     display: flex;

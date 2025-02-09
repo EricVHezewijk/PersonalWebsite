@@ -6,11 +6,10 @@ function IntroText() {
       <div className='intro-text-container'>
         <h4>HEY THERE👋, I'M</h4>
         <h1>Eric</h1>
-        <h3 className='software-engineer-txt'>Software Engineer</h3>
+        <h3 className='software-engineer-txt'>Software Engineering Student</h3>
+        <h4 className='uvic-txt'>@ University of Victoria</h4>
         <p>
-          I'm a software engineering student in Victoria, BC. Although all fields
-          of programming interest me, I am particularily drawn to web development
-          and machine learning.
+          I love all things programming related, but am particularily drawn towards web development and machine learning! Currently exploring co-op opportunities to collaborate with others and contribute to impactful real-world projects!
         </p>
         <button className='resume-btn'>Resume</button>
       </div>
