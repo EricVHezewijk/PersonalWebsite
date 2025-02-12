@@ -4,12 +4,12 @@ import Project from './Project'
 function ProjectContainer() {
   return (
     <>
-      <h3 className='project-header'>Projects</h3>
+      <h2 className='project-header'>Projects - </h2>
       <div className='project-container'>
-        <Project />
-        <Project />
-        <Project />
-      </div>
+        <Project className='movie-browser' title='Movie Browser' />
+        <Project className='stock-predictor' title='Machine Learning Stock Predictor'/>
+        <Project className='temp-monitor' title='Temperature Monitoring System'/>
+      </div> 
     </>
     
   )

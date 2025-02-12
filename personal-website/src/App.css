@@ -19,18 +19,20 @@ html {
 .intro-container {
     display: flex;
     align-items: center;
-    border: 2px solid red;
-    margin: 3rem 5rem 0 5rem;
+    margin: 3rem 5rem 3rem 5rem;
+}
+
+@media (max-width: 500px) {
+    .intro-container {
+        margin: 1.5rem 2.5rem 0 2.5rem;
+    }
 }
 
 .intro-text-container {
-    max-width: 40vw;
-    max-height: 40vh;
-    border: 2px solid red;
+    max-width: 450px;
 }
 
 .intro-text-container h1 {
-    padding: 0.5rem 0 0.5rem 0;
     font-weight: 800;
     font-size: 4rem;
 }
@@ -41,6 +43,7 @@ html {
 
 .intro-text-container h4{
     font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .software-engineer-txt {
@@ -65,7 +68,6 @@ html {
 
 .pfp-container {
     margin: 1rem 1rem 0 auto;
-    border: 2px solid red;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
@@ -79,29 +81,54 @@ html {
     object-fit: cover;
 }
 
-.project-container {
-    border: 2px solid red;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.project {
-    border: 2px solid black;
-    margin: 1rem;
-    aspect-ratio: 1 / 1;
-}
-
-.project ul{
-    padding-left: 1.5rem;
-}
-
-.project-header {
-    margin-top: 20%;
-}
-
 @media (max-width: 768px) {
     .project-container {
         flex-direction: column;
+    }
+}
+
+.project-header {
+    margin: 2rem 0rem 0rem 5rem;
+}
+
+.project-container {
+    margin: 1rem 5rem 3rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project {
+    width: 30%;
+    aspect-ratio: 4/5;
+    border-radius: 1rem;
+}
+
+.project h3 {
+    background: transparent;
+    margin: 1rem;
+    font-size: 1.5em;
+}
+
+.movie-browser {
+    background: linear-gradient(-45deg, #2E3192, #1BFFFF);
+}
+
+.stock-predictor {
+    background: linear-gradient(-45deg, #662D8C, #ED1E79);
+}
+
+.temp-monitor {
+    background: linear-gradient(-45deg, #11998E, #38EF7D);
+}
+
+@media (max-width: 900px) {
+    .project-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .project {
+        width: 100%;
+        max-width: 450px;
     }
 }
