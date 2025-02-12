@@ -22,11 +22,7 @@ html {
     margin: 3rem 5rem 3rem 5rem;
 }
 
-@media (max-width: 500px) {
-    .intro-container {
-        margin: 1.5rem 2.5rem 0 2.5rem;
-    }
-}
+
 
 .intro-text-container {
     max-width: 450px;
@@ -105,9 +101,12 @@ html {
 }
 
 .project h3 {
+    margin: 1rem;
+}
+
+.project * {
     background: transparent;
     margin: 1rem;
-    font-size: 1.5em;
 }
 
 .movie-browser {
@@ -130,5 +129,18 @@ html {
     .project {
         width: 100%;
         max-width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro-container {
+        margin: 1.5rem 2.5rem 0 2.5rem;
+    }
+
+    .project-header {
+        margin: 2rem 0rem 0rem 2.5rem;
+    }
+    .project-container {
+        margin: 1rem 2.5rem 3rem 2.5rem;
     }
 }
