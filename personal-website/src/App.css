@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sriracha&display=swap');
 
 :root {
-    --primary-color: #f1951a;
+    --primary-color: #00d8ec;
 }
 
 * {
@@ -22,8 +22,6 @@ html {
     margin: 3rem 5rem 3rem 5rem;
 }
 
-
-
 .intro-text-container {
     max-width: 450px;
 }
@@ -31,6 +29,7 @@ html {
 .intro-text-container h1 {
     font-weight: 800;
     font-size: 4rem;
+    letter-spacing: 5%;
 }
 
 .intro-text-container h3{
@@ -38,7 +37,7 @@ html {
 }
 
 .intro-text-container h4{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 0.5rem;
 }
 
@@ -49,17 +48,18 @@ html {
 .resume-btn {
     padding: 0.5rem 2rem 0.5rem 2rem;
     border: none;
-    border-radius: 2rem;
+    border-radius: 0.75rem;
     margin: 1rem 0rem 0rem 0rem;
     cursor: pointer;
-    box-shadow: 0 0 0.7rem black;
     background-color: var(--primary-color);
+    border: 1.5px solid black;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .resume-btn:hover {
-    transform: scale(1.05), translate(-2.5%);
-    transition: 0.2s ease-in-out;
-    font-size: large;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 0.4rem black;
 }
 
 .pfp-container {
@@ -85,27 +85,73 @@ html {
 
 .project-header {
     margin: 2rem 0rem 0rem 5rem;
+    color: rgb(73, 73, 73);
+    letter-spacing: 5%;
 }
 
 .project-container {
     margin: 1rem 5rem 3rem 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .project {
     width: 30%;
-    aspect-ratio: 4/5;
     border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    transform: scale(0);
+    /* transition: transform 0s ease-in; */
 }
 
+.project.show {
+    transform: scale(1);
+    transition: transform 1s ease-in;
+}
+
+.project:hover {
+    transform: scale(1.07);
+    transition: transform 0.3s ease-in;
+}
+
+.project:not(:hover) {
+    transform: scale(1); /* Ensure scale is reset to 1 */
+    transition: transform 0.3s ease-out; /* Transition for when you unhover (takes 0.5s) */
+}
+
+.project button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    margin: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+i {
+    font-size: 1.5rem; /* Adjust the icon size */
+}
+
+
 .project h3 {
-    margin: 1rem;
+    margin-right: 1rem;
+}
+
+.project p {
+    font-size: 1rem;
 }
 
 .project * {
     background: transparent;
+    margin: 0rem 0 0.5rem 0;
+}
+
+.project ul li {
     margin: 1rem;
 }
 
@@ -121,10 +167,13 @@ html {
     background: linear-gradient(-45deg, #11998E, #38EF7D);
 }
 
+.about-me-container {
+    margin: 1rem 5rem 3rem 5rem;
+}
+
 @media (max-width: 900px) {
     .project-container {
         flex-direction: column;
-        gap: 20px;
     }
     .project {
         width: 100%;
@@ -142,5 +191,11 @@ html {
     }
     .project-container {
         margin: 1rem 2.5rem 3rem 2.5rem;
+    }
+}
+
+@media (min-width:900px) and (max-width: 1200px) {
+    .project p {
+        font-size: 0.8rem;
     }
 }

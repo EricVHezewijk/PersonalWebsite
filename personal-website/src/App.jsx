@@ -1,6 +1,7 @@
 import './App.css';
 import IntroText from './components/IntroText';
 import ProjectContainer from './components/ProjectContainer';
+import AboutMe from './components/AboutMe';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <IntroText />
       <ProjectContainer />
+      <AboutMe />
     </>
   )
 }
