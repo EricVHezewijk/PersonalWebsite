@@ -21,6 +21,12 @@ function IntroText() {
       {/* <div className='pfp-container'>
         <img src='./pfp.png'></img>
       </div> */}
+      <div className="skills-wrapper">
+        <div className="skills-container">
+          <img src='/skills.png' />
+        </div>
+      </div>
+
     </div>
     
   )
