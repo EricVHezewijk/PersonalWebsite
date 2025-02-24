@@ -3,7 +3,7 @@ import Project from './Project'
 
 function ProjectContainer() {
   return (
-    <>
+    <div className="project-wrapper">
       <h2 className='project-header'>Projects - </h2>
       <div className='project-container'>
         <Project  project='movie-browser' 
@@ -24,8 +24,8 @@ function ProjectContainer() {
                   description='IoT-based temperature monitoring system, designed with Pico W microcontroller controlled by Python and relayed to a web based UI.'
                   points={[]}
         />
-      </div> 
-    </>
+      </div>
+    </div> 
     
   )
 }
