@@ -18,9 +18,6 @@ function IntroText() {
         </p>
         <button className='resume-btn' onClick={openResume}>Resume</button>
       </div>
-      {/* <div className='pfp-container'>
-        <img src='./pfp.png'></img>
-      </div> */}
       <div className="coding-wrapper">
         <div className="coding-container">
           <img src='/coding.png' />
