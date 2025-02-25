@@ -191,7 +191,6 @@ i {
     background-color: white;
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
     overflow: hidden;
 }
 
@@ -201,6 +200,7 @@ i {
 
 .interest-text {
     width: 50%;
+    position: relative;
 }
 
 .interest-title {
@@ -261,19 +261,18 @@ i {
 }
 
  .engine-icon img {
-    bottom: -4vw;
+    bottom: -60px;
     left: 22vw;
     transform: rotate(-30deg);
     width: 20vw;
     height: auto;
     opacity: 0.1;
     position: absolute;
-    z-index: 1;
 }
 
 .piston-icon img {
     position: absolute;
-    top: -3vw;
+    top: -50px;
     left: -4vw;
     transform: rotate(130deg);
     width: 15vw;
@@ -281,26 +280,25 @@ i {
     opacity: 0.1;
 }
 
-.tree-icon img {
-    bottom: -4vw;
-    left: 22vw;
-    transform: rotate(-30deg);
-    width: 20vw;
-    height: auto;
-    opacity: 0.1;
-    position: absolute;
-    z-index: 1;
-}
-
 .mountain-icon img {
     position: absolute;
-    bottom: -110px;
+    bottom: -12em;
     right: -70px;
     width: 40vw;
     height: auto;
     opacity: 0.1;
     transform: scaleX(-1);
 }
+
+.shadow-cursor {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    pointer-events: none; /* Makes sure the shadow element doesn't interfere with other elements */
+    transition: box-shadow 0.1s ease;
+  }
 
 
 
