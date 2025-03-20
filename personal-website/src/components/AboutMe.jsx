@@ -3,7 +3,7 @@ import React from "react";
 function AboutMe() {
   return (
     <div className="about-me-wrapper">
-      <h2 className='project-header'>My Interests - </h2>
+      <h2 className='project-header'>About Me - </h2>
       <div className="interest-container">
         <div className="interest-text automotive">
           <h2 className="interest-title">Automotive</h2>
@@ -27,8 +27,8 @@ function AboutMe() {
             <img src="car1.JPEG" />
           </div>
           <div className="portrait-img-container">
-            <img src="car2.jpeg" />
-            <img src="car3.jpeg" />
+            <img src="car2.JPG" />
+            <img src="car3.JPG" />
           </div>
         </div>
       </div>

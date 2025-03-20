@@ -8,8 +8,11 @@ function ProjectContainer() {
       <div className='project-container'>
         <Project  project='movie-browser' 
                   title='Movie Browser' 
-                  description='Created a movie browing website in React, allowing users to browse, search and favourite movies that are fetched from a RESTful API.'
-                  points={['blah', 'blah', 'blah']}
+                  points={[
+                      'Built a movie browser website with React.js where users can search for popular movies, save their favorites, and organize them in a custom grid layout.', 
+                      'Managed state to handle search queries, API calls, and keep track of users\' favorite movies.', 
+                      'Kept the codebase organized and secure by using Git and GitHub for version control, making it easy to experiment without breaking anything.'
+                    ]}
                   link='https://movie-finder-project.netlify.app/'
         />
 

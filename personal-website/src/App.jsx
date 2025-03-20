@@ -2,6 +2,7 @@ import './App.css';
 import IntroText from './components/IntroText';
 import ProjectContainer from './components/ProjectContainer';
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <IntroText />
       <ProjectContainer />
       <AboutMe />
+      <Contact />
     </>
   )
 }

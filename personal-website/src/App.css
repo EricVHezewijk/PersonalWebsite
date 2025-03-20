@@ -109,6 +109,8 @@ html {
     padding: 1rem;
     position: relative;
     transform: scale(0);
+    box-sizing: border-box;
+
 }
 
 .project.show {
@@ -136,7 +138,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
 }
 
 i {
@@ -254,6 +255,7 @@ i {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
 }
 
 .image-gallery img:hover {
@@ -290,15 +292,41 @@ i {
     transform: scaleX(-1);
 }
 
-.shadow-cursor {
-    width: 100px;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    position: absolute;
-    pointer-events: none; /* Makes sure the shadow element doesn't interfere with other elements */
-    transition: box-shadow 0.1s ease;
-  }
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5rem 3rem 5rem;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.contact-header {
+    font-size: 28px;
+    color: #2a9d8f;
+    margin-bottom: 15px;
+    font-size: 2vw;
+    display: flex;
+    background-color: white;
+}
+
+.location-container {
+    display: flex;
+    background: transparent;
+}
+
+.location-container *{
+    background: transparent;
+}
 
 
 

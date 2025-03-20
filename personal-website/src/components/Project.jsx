@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 
-function Project({project, title, description, points, link}) {
+function Project({project, title, points, link}) {
 
   const [loaded, setLoaded] = useState(false);
 
@@ -20,7 +20,6 @@ function Project({project, title, description, points, link}) {
       <button onClick={openProjectLink}>
         <i className="fa-brands fa-github"></i>
       </button>
-      <p>{description}</p>
       <ul>
         {points.map((item, index) => (
           <li key={index}>{item}</li>
