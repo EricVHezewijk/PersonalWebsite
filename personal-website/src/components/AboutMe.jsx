@@ -58,7 +58,7 @@ function AboutMe() {
         
       </div>
 
-      <div className="interest-container">
+      {/* <div className="interest-container">
         <div className="interest-text excercise">
           <h2 className="interest-title">Exercise</h2>
           <p className="interest-description">Sed dictum urna sit amet dui fermentum, a cursus ligula tristique. Nullam feugiat nunc ut leo suscipit, a malesuada enim tincidunt.</p>
@@ -68,7 +68,7 @@ function AboutMe() {
           <img src="exercise2.jpg" />
           <img src="exercise3.jpg" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

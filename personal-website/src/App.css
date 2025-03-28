@@ -89,7 +89,6 @@ html {
     justify-content: space-between;
 }
 
-
 .project-header {
     color: rgb(73, 73, 73);
     letter-spacing: 5%;
@@ -99,18 +98,17 @@ html {
 .project-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
 }
 
 .project {
-    width: 30%;
+    width: 33%;
     border-radius: 8px;
     padding: 1rem;
     position: relative;
     transform: scale(0);
     box-sizing: border-box;
-
 }
 
 .project.show {
@@ -327,6 +325,26 @@ i {
 .location-container *{
     background: transparent;
 }
+
+.location-container i {
+    transform: scale(0.7);
+}
+
+.contact-icons-container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid red;
+    width: 100%;
+}
+
+.contact-icons-container div {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icons
 
 
 

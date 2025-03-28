@@ -19,13 +19,22 @@ function ProjectContainer() {
         <Project  project='stock-predictor' 
                   title='Machine Learning Stock Predictor' 
                   description='Machine learning web app to predict daily stock price movement using pands, numpy and scikit-learn to clean and analyze data.'
-                  points={[]}
+                  points={[
+                    'Built a stock prediction model using Python, NumPy, pandas, and scikit-learn to analyze historical market data and forecast daily price movements.',
+                    'I pulled real-time stock data with the yfinance library, cleaned and preprocessed it to filter out noise, and experimented with different feature sets to improve accuracy.',
+                    'Trained and fine-tuned the model using an 80/20 train-test split, evaluating performance with precision scoring.'
+                  ]}
         />
 
         <Project  project='temp-monitor' 
                   title='Temperature Monitoring System' 
                   description='IoT-based temperature monitoring system, designed with Pico W microcontroller controlled by Python and relayed to a web based UI.'
-                  points={[]}
+                  points={[
+                    'Designed an IoT-based temperature monitoring system using Python and a Raspberry Pi Pico W to track real-time temperatures.',
+                    'Built a responsive web dashboard with HTML, CSS, and JavaScript, making it easy to monitor temperature changes remotely.',
+                    'Implemented a RESTful API for data communication between the microcontroller and the web interface, allowing for real-time updates and alerts.',
+                    'This project was a fun mix of hardware and software, combining my interest in embedded systems with web development to create a practical, user-friendly solution.'
+                  ]}
         />
       </div>
     </div> 
