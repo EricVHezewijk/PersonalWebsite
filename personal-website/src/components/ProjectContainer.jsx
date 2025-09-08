@@ -6,6 +6,15 @@ function ProjectContainer() {
     <div className="project-wrapper">
       <h2 className='project-header'>Projects - </h2>
       <div className='project-container'>
+        <Project  project='euchre' 
+                  title='Web Based Euchre Card Game' 
+                  points={['Created a web-based version of the popular card game Euchre using React for the frontend and Node.js with Express for the backend.',
+                          'Built RESTful API endpoints to manage game state, player actions, and real-time updates.',
+                          'Currently implementing multiplayer functionality using WebSockets to allow players to join and play games in real-time.'
+                  ]}
+                  link='https://github.com/EricVHezewijk/Euchre'
+        />
+
         <Project  project='movie-browser' 
                   title='Movie Browser' 
                   points={[
@@ -16,16 +25,15 @@ function ProjectContainer() {
                   link='https://movie-finder-project.netlify.app/'
         />
 
-        <Project  project='stock-predictor' 
-                  title='Machine Learning Stock Predictor' 
-                  description='Machine learning web app to predict daily stock price movement using pands, numpy and scikit-learn to clean and analyze data.'
-                  points={[]}
-        />
+        
 
         <Project  project='temp-monitor' 
                   title='Temperature Monitoring System' 
-                  description='IoT-based temperature monitoring system, designed with Pico W microcontroller controlled by Python and relayed to a web based UI.'
-                  points={[]}
+                  points={[
+                    'Developed a temperature monitoring system using Python and a Rasberry Pi microcontroller to track real-time status tracking of environments like industrial refrigeration systems.',
+                    'Designed a responsive web interface using HTML, CSS, and JavaScript to display temperature readings through a user friendly dashboard.',
+                    'Implemented a RestFul API for real-time data communication between the microcontroller and the web interface.'
+                  ]}
         />
       </div>
     </div> 
