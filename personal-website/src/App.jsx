@@ -11,7 +11,7 @@ function App() {
       <IntroText />
       <ProjectContainer />
       <AboutMe />
-      {/* <Contact /> */}
+      <Contact />
     </>
   )
 }

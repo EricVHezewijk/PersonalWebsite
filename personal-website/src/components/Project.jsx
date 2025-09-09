@@ -17,9 +17,11 @@ function Project({project, title, points, link}) {
   return (
     <div className={`project ${project} ${loaded ? 'show' : ''}`}>
       <h3>{title}</h3>
+      {link && 
       <button onClick={openProjectLink}>
         <i className="fa-brands fa-github"></i>
       </button>
+    }
       <ul>
         {points.map((item, index) => (
           <li key={index}>{item}</li>

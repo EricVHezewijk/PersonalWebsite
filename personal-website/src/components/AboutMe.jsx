@@ -69,7 +69,7 @@ function AboutMe() {
           <img src="exercise3.jpg" />
         </div>
       </div> */}
-      
+
     </div>
   );
 }

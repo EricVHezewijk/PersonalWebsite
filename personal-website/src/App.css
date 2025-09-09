@@ -178,14 +178,14 @@ i {
 .about-me-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 3rem 5rem 3rem 5rem;
+    margin: 3rem 5rem 1rem 5rem;
 }
 
   
 .interest-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     border-radius: 8px;
     background-color: white;
     padding: 1rem;
@@ -261,10 +261,10 @@ i {
 }
 
  .engine-icon img {
-    bottom: -60px;
-    left: 22vw;
+    bottom: -40px;
+    right: 20%;
     transform: rotate(-30deg);
-    width: 20vw;
+    width: 120px;
     height: auto;
     opacity: 0.1;
     position: absolute;
@@ -272,19 +272,19 @@ i {
 
 .piston-icon img {
     position: absolute;
-    top: -50px;
-    left: -4vw;
+    top: -40px;
+    left: -20px;
     transform: rotate(130deg);
-    width: 15vw;
+    width: 100px;
     height: auto;
     opacity: 0.1;
 }
 
 .mountain-icon img {
     position: absolute;
-    bottom: -12em;
-    right: -70px;
-    width: 40vw;
+    bottom: -80px;
+    right: -20px;
+    width: 200px;
     height: auto;
     opacity: 0.1;
     transform: scaleX(-1);
@@ -293,7 +293,7 @@ i {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 3rem 5rem 3rem 5rem;
+    margin: 1rem 5rem 3rem 5rem;
 }
 
 .contact-container {
@@ -326,58 +326,181 @@ i {
     background: transparent;
 }
 
-
-
-@media (max-width: 500px) {
-    .intro-container {
-        margin: 1.5rem 2.5rem 0 2.5rem;
-    }
-
-    .project-header {
-        margin: 2rem 0rem 0rem 2.5rem;
-    }
-    .project-container {
-        margin: 1rem 2.5rem 3rem 2.5rem;
-    }
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    background: transparent;
 }
 
-@media (max-width: 1000px) {
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #2a9d8f;
+    background: transparent;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contact-link:hover {
+    transform: translateY(-2px);
+    color: var(--primary-color);
+}
+
+.contact-link i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    background: transparent;
+}
+
+.contact-link span {
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+}
+
+
+
+/* Tablet styles - 768px and below */
+@media (max-width: 768px) {
     .intro-container {
+        margin: 3rem 3rem 0rem 3rem;
         flex-direction: column;
         align-items: center;
     }
+    
     .intro-text-container {
         align-items: center;
         justify-content: center;
         max-width: 750px;
     }
+    
     .intro-text-container p {
         text-align: center;
     }
+    
+    .project-wrapper {
+        margin: 0rem 3rem 3rem 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .project-container {
         flex-direction: column;
     }
+    
     .project {
         width: 100%;
         max-width: 750px;
     }
+    
     .coding-container img {
         max-width: 400px;
     }
-    .project-wrapper {
-        justify-content: center;
-        align-items: center;
-        margin: 0rem 1rem 3rem 1rem;
-
-    }
+    
     .about-me-wrapper {
+        margin: 3rem 3rem 1rem 3rem;
         justify-content: center;
         align-items: center;
     }
-    .about-me-text {
-        max-width: 450px;
-    }
+    
     .interest-container {
         max-width: 750px;
+    }
+    
+    .contact-wrapper {
+        margin: 1rem 3rem 3rem 3rem;
+    }
+    
+    .contact-links {
+        gap: 1.5rem;
+    }
+    
+    .engine-icon img {
+        width: 100px;
+        bottom: -30px;
+        right: 15%;
+    }
+    
+    .piston-icon img {
+        width: 80px;
+        top: -30px;
+        left: -15px;
+    }
+    
+    .mountain-icon img {
+        width: 160px;
+        bottom: -60px;
+        right: -15px;
+    }
+}
+
+/* Phone styles - 480px and below */
+@media (max-width: 480px) {
+    .intro-container {
+        margin: 2rem 1.5rem 0rem 1.5rem;
+    }
+    
+    .project-wrapper {
+        margin: 0rem 1.5rem 3rem 1.5rem;
+    }
+    
+    .about-me-wrapper {
+        margin: 3rem 1.5rem 1rem 1.5rem;
+    }
+    
+    .contact-wrapper {
+        margin: 1rem 1.5rem 3rem 1.5rem;
+    }
+    
+    .contact-links {
+        gap: 1rem;
+    }
+    
+    .contact-link {
+        padding: 0.5rem;
+    }
+    
+    .contact-link i {
+        font-size: 1.5rem;
+    }
+    
+    .interest-container {
+        flex-direction: column;
+    }
+    
+    .interest-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+    
+    .interest-text {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .image-gallery {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .interest-container:nth-child(3) .image-gallery {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .interest-container:nth-child(3) .interest-text {
+        margin-bottom: 1.5rem;
+    }
+    
+    .automotive, .nature {
+        margin: 0;
+    }
+    
+    .engine-icon, .piston-icon, .mountain-icon {
+        display: none;
     }
 }
