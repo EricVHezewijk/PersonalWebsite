@@ -47,7 +47,7 @@ function AboutMe() {
         <div className="interest-text nature">
           <h2 className="interest-title">Outdoor Ventures</h2>
           <p className="interest-description">
-            Growing up on Vancouver Island has given me an incredible opportunity to immerse myself in the stunning natural environment that surrounds me. From my early elementary school field trips, I developed a deep appreciation for the beautiful landscapes and ecosystems of this beautiful part of the world. I’m passionate about a variety of outdoor activities, including camping, hiking, trail running, and swimming in the chilly lakes and oceans that BC is known for. While I’m fortunate to live in a province filled with endless outdoor adventures, I also have a strong love for traveling and discovering new cultures around the world. Every new destination offers a fresh perspective on nature, and I relish the opportunity to connect with the natural beauty of different places.
+            Growing up on Vancouver Island has given me an incredible opportunity to immerse myself in the stunning environment that surrounds me. From a young age, I developed a great appreciation for the beautiful landscapes and ecosystems that surround me. I’m passionate about a variety of outdoor activities, including camping, hiking, trail running, and swimming in the chilly lakes and oceans that BC is known for. While I’m fortunate to live in a province filled with endless outdoor adventures, I also have a strong love for traveling and discovering new cultures around the world. Every new destination offers a fresh perspective on nature, and I relish the opportunity to connect with the natural beauty of different places.
           </p>
           <div className="icon-container">
             <div className="mountain-icon">
@@ -57,18 +57,6 @@ function AboutMe() {
         </div>
         
       </div>
-
-      {/* <div className="interest-container">
-        <div className="interest-text excercise">
-          <h2 className="interest-title">Exercise</h2>
-          <p className="interest-description">Sed dictum urna sit amet dui fermentum, a cursus ligula tristique. Nullam feugiat nunc ut leo suscipit, a malesuada enim tincidunt.</p>
-        </div>
-        <div className="image-gallery">
-          <img src="exercise1.jpg" />
-          <img src="exercise2.jpg" />
-          <img src="exercise3.jpg" />
-        </div>
-      </div> */}
 
     </div>
   );
