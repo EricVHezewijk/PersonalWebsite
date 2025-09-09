@@ -20,7 +20,7 @@ function IntroText() {
       </div>
       <div className="coding-wrapper">
         <div className="coding-container">
-          <img src='/coding.png' />
+          <img src='coding.png' />
         </div>
       </div>
         
