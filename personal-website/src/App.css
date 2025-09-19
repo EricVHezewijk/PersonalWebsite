@@ -207,6 +207,8 @@ i {
 .interest-text {
     width: 65%;
     position: relative;
+    /* font-size: clamp(); */
+    font-size: 200px;
 }
 
 .interest-title {
@@ -217,7 +219,8 @@ i {
 
 .interest-description {
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: clamp(12px, 1.7vw, 15.6px)
+    /* font-size: clamp(0.7rem, ); */
 }
 
 .automotive, .excercise {
@@ -233,7 +236,7 @@ i {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    width: 35%;
+    width: 45%;
 }
 
 .landscape-img-container img{
