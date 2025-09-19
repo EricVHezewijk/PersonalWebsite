@@ -113,17 +113,11 @@ html {
     position: relative;
     transform: scale(0);
     box-sizing: border-box;
-
-}
-
-.project.show {
-    transform: scale(1);
-    transition: transform 1s ease-in;
+    transition: transform 0.3s;
 }
 
 .project:hover {
     transform: scale(1.07);
-    transition: transform 0.3s ease-in;
 }
 
 .project:not(:hover) {
@@ -194,6 +188,11 @@ i {
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.interest-container:hover {
+    transform: scale(1.03);
 }
 
 .interest-container:last-child {
@@ -205,9 +204,8 @@ i {
 }
 
 .interest-text {
-    width: 65%;
+    width: 55%;
     position: relative;
-    /* font-size: clamp(); */
     font-size: 200px;
 }
 
@@ -220,7 +218,6 @@ i {
 .interest-description {
     line-height: 1.5;
     font-size: clamp(12px, 1.7vw, 15.6px)
-    /* font-size: clamp(0.7rem, ); */
 }
 
 .automotive, .excercise {
@@ -265,7 +262,7 @@ i {
 }
 
 .image-gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
  .engine-icon img {

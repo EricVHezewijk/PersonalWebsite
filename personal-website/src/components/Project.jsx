@@ -1,21 +1,13 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
 
 function Project({project, title, points, link}) {
-
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-      setLoaded(true);
-    },[]
-  )
 
   function openProjectLink() {
     window.open(link, '_blank', 'noopener,noreferrer');
   }
 
   return (
-    <div className={`project ${project} ${loaded ? 'show' : ''}`}>
+    <div className={`project ${project}`}>
       <h3>{title}</h3>
       {link && 
       <button onClick={openProjectLink}>
