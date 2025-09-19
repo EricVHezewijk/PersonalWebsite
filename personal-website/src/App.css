@@ -298,7 +298,7 @@ i {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 1rem clamp(3rem, calc(50vw - 25rem), 24rem) 3rem clamp(3rem, calc(50vw - 25rem), 24rem);
+    margin: 0rem clamp(3rem, calc(50vw - 25rem), 24rem) 3rem clamp(3rem, calc(50vw - 25rem), 24rem);
 }
 
 .contact-container {
@@ -310,7 +310,6 @@ i {
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    flex-direction: column;
 }
 
 .contact-header {
@@ -321,20 +320,14 @@ i {
     background-color: white;
 }
 
-.location-container {
-    display: flex;
-    background: transparent;
-}
-
-.location-container *{
-    background: transparent;
+.contact-text {
+    background-color: transparent;
 }
 
 .contact-links {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;
     background: transparent;
 }
 
@@ -441,16 +434,18 @@ i {
     }
     
     .contact-wrapper {
-        margin: 1rem 3rem 3rem 3rem;
+        margin: 0rem 3rem 3rem 3rem;
         justify-content: center;
         align-items: center;
     }
     
     .contact-container {
         max-width: 750px;
+        flex-direction: column;
     }
     
     .contact-links {
+        margin-top: 0.5rem;
         gap: 1.5rem;
     }
     
