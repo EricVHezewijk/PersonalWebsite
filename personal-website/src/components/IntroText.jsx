@@ -3,7 +3,7 @@ import React from 'react'
 function IntroText() {
 
   function openResume() {
-    window.open('/Eric_Van_Hezewijk_CV_2025.pdf', '_blank', 'noopener,noreferrer');
+    window.open('Eric_Van_Hezewijk_CV_2025.pdf', '_blank', 'noopener,noreferrer');
   }
 
   return (
