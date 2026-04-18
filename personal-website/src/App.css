@@ -191,10 +191,6 @@ i {
     transition: transform 0.3s;
 }
 
-.interest-container:hover {
-    transform: scale(1.03);
-}
-
 .interest-container:last-child {
     margin-bottom: 1rem;
 }
