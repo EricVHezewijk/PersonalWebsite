@@ -228,7 +228,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     width: 45%;
 }
 
@@ -244,17 +244,18 @@ i {
 .portrait-img-container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     z-index: 2;
 }
 
 .portrait-img-container img{
-    width: calc(50% - 10px);
+    width: calc(50% - 5px);
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     object-fit: cover;
+    margin-bottom: 5px;
 }
 
 .image-gallery img:hover {
